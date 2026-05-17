@@ -10,7 +10,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Build the catalog and index at container build time
-RUN python scraper.py
 RUN python build_index.py
 
 # Expose port
